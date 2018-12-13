@@ -124,7 +124,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Core' do |core|
-    core.dependency 'KSCrash/Reporting/Filters/Basic'
+    core.dependency 'KSCrashAblyFork/Reporting/Filters/Basic'
     core.source_files = 'Source/KSCrash/Installations/KSCrashInstallation.h',
                         'Source/KSCrash/Installations/KSCrashInstallation.m',
                         'Source/KSCrash/Installations/KSCrashInstallation+Private.h',
