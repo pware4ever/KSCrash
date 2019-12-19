@@ -9,7 +9,7 @@
 #ifndef KSCrashAblyForkFramework_h
 #define KSCrashAblyForkFramework_h
 
-#import "KSCrashAblyFork.h"
+#import "KSCrash.h"
 
 #import "KSCrashC.h"
 #import "KSCrashInstallation.h"
