@@ -185,7 +185,7 @@
 /* Begin PBXFileReference section */
 		63289D541DED6ABF0089E031 /* KSCrashReportFixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = KSCrashReportFixer.c; path = ../../Source/KSCrash/Recording/KSCrashReportFixer.c; sourceTree = "<group>"; };
 		63289D551DED6ABF0089E031 /* KSCrashReportFixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashReportFixer.h; path = ../../Source/KSCrash/Recording/KSCrashReportFixer.h; sourceTree = "<group>"; };
-		CB0DD4F51D9B6DD9009D4FE7 /* KSCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0DD4F51D9B6DD9009D4FE7 /* KSCrashAblyFork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSCrashAblyFork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0DD4FA1D9B6DD9009D4FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB18067E1E0DA02800239506 /* KSStackCursor_Backtrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = KSStackCursor_Backtrace.c; path = ../../Source/KSCrash/Recording/Tools/KSStackCursor_Backtrace.c; sourceTree = "<group>"; };
 		CB18067F1E0DA02800239506 /* KSStackCursor_Backtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSStackCursor_Backtrace.h; path = ../../Source/KSCrash/Recording/Tools/KSStackCursor_Backtrace.h; sourceTree = "<group>"; };
@@ -386,7 +386,7 @@
 		CB0DD4F61D9B6DD9009D4FE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB0DD4F51D9B6DD9009D4FE7 /* KSCrash.framework */,
+				CB0DD4F51D9B6DD9009D4FE7 /* KSCrashAblyFork.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -818,9 +818,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CB0DD4F41D9B6DD9009D4FE7 /* KSCrash */ = {
+		CB0DD4F41D9B6DD9009D4FE7 /* KSCrashAblyFork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB0DD4FD1D9B6DD9009D4FE7 /* Build configuration list for PBXNativeTarget "KSCrash" */;
+			buildConfigurationList = CB0DD4FD1D9B6DD9009D4FE7 /* Build configuration list for PBXNativeTarget "KSCrashAblyFork" */;
 			buildPhases = (
 				CB0DD4F01D9B6DD9009D4FE7 /* Sources */,
 				CB0DD4F11D9B6DD9009D4FE7 /* Frameworks */,
@@ -831,9 +831,9 @@
 			);
 			dependencies = (
 			);
-			name = KSCrash;
+			name = KSCrashAblyFork;
 			productName = KSCrash;
-			productReference = CB0DD4F51D9B6DD9009D4FE7 /* KSCrash.framework */;
+			productReference = CB0DD4F51D9B6DD9009D4FE7 /* KSCrashAblyFork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -855,6 +855,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CB0DD4EB1D9B6DD9009D4FE7;
@@ -862,7 +863,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB0DD4F41D9B6DD9009D4FE7 /* KSCrash */,
+				CB0DD4F41D9B6DD9009D4FE7 /* KSCrashAblyFork */,
 			);
 		};
 /* End PBXProject section */
@@ -1123,8 +1124,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.kscrash.KSCrash;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1142,8 +1143,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.kscrash.KSCrash;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1160,7 +1161,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB0DD4FD1D9B6DD9009D4FE7 /* Build configuration list for PBXNativeTarget "KSCrash" */ = {
+		CB0DD4FD1D9B6DD9009D4FE7 /* Build configuration list for PBXNativeTarget "KSCrashAblyFork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB0DD4FE1D9B6DD9009D4FE7 /* Debug */,
