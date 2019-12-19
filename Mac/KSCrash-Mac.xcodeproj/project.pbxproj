@@ -1342,9 +1342,9 @@
 			productReference = CB62408917EBC9F7006471F1 /* libKSCrashLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CB8E55E617EB99E3000C56D3 /* KSCrash */ = {
+		CB8E55E617EB99E3000C56D3 /* KSCrashAblyFork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB8E560F17EB99E3000C56D3 /* Build configuration list for PBXNativeTarget "KSCrash" */;
+			buildConfigurationList = CB8E560F17EB99E3000C56D3 /* Build configuration list for PBXNativeTarget "KSCrashAblyFork" */;
 			buildPhases = (
 				CB8E55E217EB99E3000C56D3 /* Sources */,
 				CB8E55E317EB99E3000C56D3 /* Frameworks */,
@@ -1355,7 +1355,7 @@
 			);
 			dependencies = (
 			);
-			name = KSCrash;
+			name = KSCrashAblyFork;
 			productName = KSCrash;
 			productReference = CB8E55E717EB99E3000C56D3 /* KSCrash.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1397,6 +1397,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CB8E55DD17EB99E3000C56D3;
@@ -1404,7 +1405,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB8E55E617EB99E3000C56D3 /* KSCrash */,
+				CB8E55E617EB99E3000C56D3 /* KSCrashAblyFork */,
 				CB8E55FD17EB99E3000C56D3 /* KSCrashTests */,
 				CB62408817EBC9F7006471F1 /* KSCrashLib */,
 			);
@@ -1658,7 +1659,7 @@
 /* Begin PBXTargetDependency section */
 		CB8E560317EB99E3000C56D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB8E55E617EB99E3000C56D3 /* KSCrash */;
+			target = CB8E55E617EB99E3000C56D3 /* KSCrashAblyFork */;
 			targetProxy = CB8E560217EB99E3000C56D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1865,8 +1866,8 @@
 				INFOPLIST_FILE = "KSCrash/KSCrash-Info.plist";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.stenerud.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = KSCrash;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -1886,8 +1887,8 @@
 				INFOPLIST_FILE = "KSCrash/KSCrash-Info.plist";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.stenerud.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = KSCrash;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -1967,7 +1968,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB8E560F17EB99E3000C56D3 /* Build configuration list for PBXNativeTarget "KSCrash" */ = {
+		CB8E560F17EB99E3000C56D3 /* Build configuration list for PBXNativeTarget "KSCrashAblyFork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB8E561017EB99E3000C56D3 /* Debug */,
