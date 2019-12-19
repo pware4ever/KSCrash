@@ -6,10 +6,10 @@
 //  Copyright © 2016 Karl Stenerud. All rights reserved.
 //
 
-#ifndef KSCrashFramework_h
-#define KSCrashFramework_h
+#ifndef KSCrashAblyForkFramework_h
+#define KSCrashAblyForkFramework_h
 
-#import "KSCrash.h"
+#import "KSCrashAblyFork.h"
 
 #import "KSCrashC.h"
 #import "KSCrashInstallation.h"
@@ -39,4 +39,4 @@
 #import "KSJSONCodecObjC.h"
 #import "NSData+GZip.h"
 
-#endif /* KSCrashFramework_h */
+#endif /* KSCrashAblyForkFramework_h */

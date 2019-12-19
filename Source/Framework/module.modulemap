@@ -1,5 +1,5 @@
-framework module KSCrash {
-	umbrella header "KSCrashFramework.h"
+framework module KSCrashAblyFork {
+	umbrella header "KSCrashAblyForkFramework.h"
 	
 	export *
 	module * { export * }

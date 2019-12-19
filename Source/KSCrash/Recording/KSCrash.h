@@ -300,7 +300,7 @@ typedef enum
 
 
 //! Project version number for KSCrashFramework.
-FOUNDATION_EXPORT const double KSCrashFrameworkVersionNumber;
+FOUNDATION_EXPORT const double KSCrashAblyForkFrameworkVersionNumber;
 
 //! Project version string for KSCrashFramework.
-FOUNDATION_EXPORT const unsigned char KSCrashFrameworkVersionString[];
+FOUNDATION_EXPORT const unsigned char KSCrashAblyForkFrameworkVersionString[];
