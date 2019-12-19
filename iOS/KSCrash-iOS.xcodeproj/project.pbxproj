@@ -797,7 +797,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03DE7B6A1C84DEF700F789BA /* KSCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DE7B6A1C84DEF700F789BA /* KSCrashAblyFork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSCrashAblyFork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DE7CD61C84E1F400F789BA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		03DE7D0F1C84FB9E00F789BA /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ../../Source/Framework/module.modulemap; sourceTree = "<group>"; };
 		03DE7DA91C879A0200F789BA /* KSCrashAblyForkFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashAblyForkFramework.h; path = ../../Source/Framework/KSCrashAblyForkFramework.h; sourceTree = "<group>"; };
@@ -1097,7 +1097,7 @@
 			children = (
 				CB6D132617EB749A00BC2C04 /* libKSCrashLib.a */,
 				CB6D133317EB749A00BC2C04 /* KSCrashTests.xctest */,
-				03DE7B6A1C84DEF700F789BA /* KSCrash.framework */,
+				03DE7B6A1C84DEF700F789BA /* KSCrashAblyFork.framework */,
 				EDF2BF211CCF15AD004BADF4 /* KSCrash.framework */,
 			);
 			name = Products;
@@ -1822,9 +1822,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03DE7B691C84DEF700F789BA /* KSCrash */ = {
+		03DE7B691C84DEF700F789BA /* KSCrashAblyFork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03DE7B711C84DEF800F789BA /* Build configuration list for PBXNativeTarget "KSCrash" */;
+			buildConfigurationList = 03DE7B711C84DEF800F789BA /* Build configuration list for PBXNativeTarget "KSCrashAblyFork" */;
 			buildPhases = (
 				03DE7B651C84DEF700F789BA /* Sources */,
 				03DE7B661C84DEF700F789BA /* Frameworks */,
@@ -1835,9 +1835,9 @@
 			);
 			dependencies = (
 			);
-			name = KSCrash;
+			name = KSCrashAblyFork;
 			productName = KSCrashAblyForkFramework;
-			productReference = 03DE7B6A1C84DEF700F789BA /* KSCrash.framework */;
+			productReference = 03DE7B6A1C84DEF700F789BA /* KSCrashAblyFork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CB6D132517EB749A00BC2C04 /* KSCrashLib */ = {
@@ -1916,6 +1916,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1926,7 +1927,7 @@
 			targets = (
 				CB6D132517EB749A00BC2C04 /* KSCrashLib */,
 				CB6D133217EB749A00BC2C04 /* KSCrashTests */,
-				03DE7B691C84DEF700F789BA /* KSCrash */,
+				03DE7B691C84DEF700F789BA /* KSCrashAblyFork */,
 				EDF2BE781CCF15AD004BADF4 /* KSCrash_static */,
 			);
 		};
@@ -2308,8 +2309,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
-				PRODUCT_NAME = KSCrash;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2341,8 +2342,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
-				PRODUCT_NAME = KSCrash;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2555,7 +2556,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KSCrash/KSCrash-Prefix.pch";
 				INFOPLIST_FILE = "KSCrashTests/KSCrashTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.stenerud.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -2584,8 +2585,8 @@
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
-				PRODUCT_NAME = KSCrash;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2618,8 +2619,8 @@
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
-				PRODUCT_NAME = KSCrash;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2630,7 +2631,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03DE7B711C84DEF800F789BA /* Build configuration list for PBXNativeTarget "KSCrash" */ = {
+		03DE7B711C84DEF800F789BA /* Build configuration list for PBXNativeTarget "KSCrashAblyFork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03DE7B6F1C84DEF800F789BA /* Debug */,
