@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03082CD71D91822300935324 /* KSCrashMonitor_Zombie.c in Sources */ = {isa = PBXBuildFile; fileRef = 03082CD61D91822300935324 /* KSCrashMonitor_Zombie.c */; };
-		8A2507031DA8768E00D7F158 /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE5C271CB8679E005EAF61 /* KSCrash.framework */; };
+		8A2507031DA8768E00D7F158 /* KSCrashAblyFork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE5C271CB8679E005EAF61 /* KSCrashAblyFork.framework */; };
 		8A2507301DA876C300D7F158 /* Container+DeepSearch_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2507091DA876C300D7F158 /* Container+DeepSearch_Tests.m */; };
 		8A2507311DA876C300D7F158 /* FileBasedTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25070B1DA876C300D7F158 /* FileBasedTestCase.m */; };
 		8A2507321DA876C300D7F158 /* KSCrashInstallationEmail_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25070C1DA876C300D7F158 /* KSCrashInstallationEmail_Tests.m */; };
@@ -683,7 +683,7 @@
 		CBA1A53B1DD25049007B1CE7 /* KSDemangle_Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDemangle_Swift.h; sourceTree = "<group>"; };
 		CBA8A0D31E25D3AB0019B5B9 /* KSCrashCachedData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KSCrashCachedData.c; sourceTree = "<group>"; };
 		CBA8A0D41E25D3AB0019B5B9 /* KSCrashCachedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCrashCachedData.h; sourceTree = "<group>"; };
-		CBEE5C271CB8679E005EAF61 /* KSCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEE5C271CB8679E005EAF61 /* KSCrashAblyFork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSCrashAblyFork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEE5C2C1CB8679E005EAF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBEE5C331CB86989005EAF61 /* KSCrashInstallation+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSCrashInstallation+Private.h"; sourceTree = "<group>"; };
 		CBEE5C341CB86989005EAF61 /* KSCrashInstallation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCrashInstallation.h; sourceTree = "<group>"; };
@@ -831,7 +831,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2507031DA8768E00D7F158 /* KSCrash.framework in Frameworks */,
+				8A2507031DA8768E00D7F158 /* KSCrashAblyFork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,7 +910,7 @@
 		CBEE5C281CB8679E005EAF61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBEE5C271CB8679E005EAF61 /* KSCrash.framework */,
+				CBEE5C271CB8679E005EAF61 /* KSCrashAblyFork.framework */,
 				8A2506FE1DA8768E00D7F158 /* KSCrashTests.xctest */,
 				F05D76C62101DF7000968B97 /* libKSCrashLib.a */,
 			);
@@ -1481,9 +1481,9 @@
 			productReference = 8A2506FE1DA8768E00D7F158 /* KSCrashTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CBEE5C261CB8679E005EAF61 /* KSCrash */ = {
+		CBEE5C261CB8679E005EAF61 /* KSCrashAblyFork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBEE5C2F1CB8679E005EAF61 /* Build configuration list for PBXNativeTarget "KSCrash" */;
+			buildConfigurationList = CBEE5C2F1CB8679E005EAF61 /* Build configuration list for PBXNativeTarget "KSCrashAblyFork" */;
 			buildPhases = (
 				CBEE5C221CB8679E005EAF61 /* Sources */,
 				CBEE5C231CB8679E005EAF61 /* Frameworks */,
@@ -1494,9 +1494,9 @@
 			);
 			dependencies = (
 			);
-			name = KSCrash;
+			name = KSCrashAblyFork;
 			productName = KSCrashAblyForkFramework;
-			productReference = CBEE5C271CB8679E005EAF61 /* KSCrash.framework */;
+			productReference = CBEE5C271CB8679E005EAF61 /* KSCrashAblyFork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F05D76C52101DF7000968B97 /* KSCrashLib */ = {
@@ -1543,6 +1543,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CBEE5C1D1CB8679E005EAF61;
@@ -1550,7 +1551,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBEE5C261CB8679E005EAF61 /* KSCrash */,
+				CBEE5C261CB8679E005EAF61 /* KSCrashAblyFork */,
 				8A2506FD1DA8768E00D7F158 /* KSCrashTests */,
 				F05D76C52101DF7000968B97 /* KSCrashLib */,
 			);
@@ -1787,7 +1788,7 @@
 /* Begin PBXTargetDependency section */
 		8A2507051DA8768E00D7F158 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBEE5C261CB8679E005EAF61 /* KSCrash */;
+			target = CBEE5C261CB8679E005EAF61 /* KSCrashAblyFork */;
 			targetProxy = 8A2507041DA8768E00D7F158 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1975,8 +1976,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				SKIP_INSTALL = YES;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1994,8 +1995,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.KSCrashAblyFork;
+				PRODUCT_NAME = KSCrashAblyFork;
 				SKIP_INSTALL = YES;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -2119,7 +2120,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBEE5C2F1CB8679E005EAF61 /* Build configuration list for PBXNativeTarget "KSCrash" */ = {
+		CBEE5C2F1CB8679E005EAF61 /* Build configuration list for PBXNativeTarget "KSCrashAblyFork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBEE5C301CB8679E005EAF61 /* Debug */,
