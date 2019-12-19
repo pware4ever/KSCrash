@@ -212,7 +212,7 @@
 		CBEE5D761CB86989005EAF61 /* Punycode.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEE5CDA1CB86989005EAF61 /* Punycode.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CBEE5D771CB86989005EAF61 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CBEE5CDB1CB86989005EAF61 /* LICENSE.txt */; };
 		CBEE5D781CB86989005EAF61 /* SwiftStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEE5CDC1CB86989005EAF61 /* SwiftStrings.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		CBEE5D7D1CB86A1A005EAF61 /* KSCrashFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEE5D7B1CB86A1A005EAF61 /* KSCrashFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBEE5D7D1CB86A1A005EAF61 /* KSCrashAblyForkFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEE5D7B1CB86A1A005EAF61 /* KSCrashAblyForkFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBEE5D7F1CB86ABE005EAF61 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE5D7E1CB86ABE005EAF61 /* libz.tbd */; };
 		CBEE5DBE1CBC14CF005EAF61 /* NSString+URLEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEE5DBC1CBC14CF005EAF61 /* NSString+URLEncode.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CBEE5DBF1CBC14CF005EAF61 /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE5DBD1CBC14CF005EAF61 /* NSString+URLEncode.m */; };
@@ -817,7 +817,7 @@
 		CBEE5CDA1CB86989005EAF61 /* Punycode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Punycode.h; sourceTree = "<group>"; };
 		CBEE5CDB1CB86989005EAF61 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		CBEE5CDC1CB86989005EAF61 /* SwiftStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftStrings.h; sourceTree = "<group>"; };
-		CBEE5D7B1CB86A1A005EAF61 /* KSCrashFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashFramework.h; path = ../../Source/Framework/KSCrashFramework.h; sourceTree = "<group>"; };
+		CBEE5D7B1CB86A1A005EAF61 /* KSCrashAblyForkFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashAblyForkFramework.h; path = ../../Source/Framework/KSCrashAblyForkFramework.h; sourceTree = "<group>"; };
 		CBEE5D7C1CB86A1A005EAF61 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ../../Source/Framework/module.modulemap; sourceTree = "<group>"; };
 		CBEE5D7E1CB86ABE005EAF61 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CBEE5DBC1CBC14CF005EAF61 /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
@@ -1236,7 +1236,7 @@
 			isa = PBXGroup;
 			children = (
 				CBEE5C2C1CB8679E005EAF61 /* Info.plist */,
-				CBEE5D7B1CB86A1A005EAF61 /* KSCrashFramework.h */,
+				CBEE5D7B1CB86A1A005EAF61 /* KSCrashAblyForkFramework.h */,
 				CBEE5D7C1CB86A1A005EAF61 /* module.modulemap */,
 			);
 			name = "Supporting Files";
@@ -1308,7 +1308,7 @@
 				CB8F1DDA1CCAF43A0022CDF0 /* KSCrashInstallation+Alert.h in Headers */,
 				CBEE5D111CB86989005EAF61 /* KSCrashMonitor_MachException.h in Headers */,
 				CB9821B71DFA142800164220 /* KSMachineContext_Apple.h in Headers */,
-				CBEE5D7D1CB86A1A005EAF61 /* KSCrashFramework.h in Headers */,
+				CBEE5D7D1CB86A1A005EAF61 /* KSCrashAblyForkFramework.h in Headers */,
 				CBEE5D651CB86989005EAF61 /* KSCString.h in Headers */,
 				CBEE5D241CB86989005EAF61 /* KSJSONCodec.h in Headers */,
 				CBEE5CFC1CB86989005EAF61 /* KSCrashReport.h in Headers */,
@@ -1495,7 +1495,7 @@
 			dependencies = (
 			);
 			name = KSCrash;
-			productName = KSCrashFramework;
+			productName = KSCrashAblyForkFramework;
 			productReference = CBEE5C271CB8679E005EAF61 /* KSCrash.framework */;
 			productType = "com.apple.product-type.framework";
 		};

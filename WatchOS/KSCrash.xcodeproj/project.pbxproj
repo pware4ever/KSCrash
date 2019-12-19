@@ -14,7 +14,7 @@
 		CB1806861E0DA02800239506 /* KSStackCursor_MachineContext.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1806801E0DA02800239506 /* KSStackCursor_MachineContext.c */; };
 		CB1806881E0DA02800239506 /* KSStackCursor.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1806821E0DA02800239506 /* KSStackCursor.c */; };
 		CB1806891E0DA02800239506 /* KSStackCursor_MachineContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1806831E0DA02800239506 /* KSStackCursor_MachineContext.h */; };
-		CB1F3DDC1DB046CB007F240B /* KSCrashFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1F3DDB1DB046CB007F240B /* KSCrashFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB1F3DDC1DB046CB007F240B /* KSCrashAblyForkFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1F3DDB1DB046CB007F240B /* KSCrashAblyForkFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB25A5C91DF221AD00EC2B02 /* KSCPU.c in Sources */ = {isa = PBXBuildFile; fileRef = CB25A5C71DF221AD00EC2B02 /* KSCPU.c */; };
 		CB25A5CA1DF221AD00EC2B02 /* KSCPU.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25A5C81DF221AD00EC2B02 /* KSCPU.h */; };
 		CB25A5EB1DF2372E00EC2B02 /* KSThread.c in Sources */ = {isa = PBXBuildFile; fileRef = CB25A5E91DF2372E00EC2B02 /* KSThread.c */; };
@@ -193,7 +193,7 @@
 		CB1806811E0DA02800239506 /* KSStackCursor_MachineContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSStackCursor_MachineContext.h; path = ../../Source/KSCrash/Recording/Tools/KSStackCursor_MachineContext.h; sourceTree = "<group>"; };
 		CB1806821E0DA02800239506 /* KSStackCursor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = KSStackCursor.c; path = ../../Source/KSCrash/Recording/Tools/KSStackCursor.c; sourceTree = "<group>"; };
 		CB1806831E0DA02800239506 /* KSStackCursor_MachineContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSStackCursor_MachineContext.h; path = ../../Source/KSCrash/Recording/Tools/KSStackCursor_MachineContext.h; sourceTree = "<group>"; };
-		CB1F3DDB1DB046CB007F240B /* KSCrashFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashFramework.h; path = ../../Source/Framework/KSCrashFramework.h; sourceTree = "<group>"; };
+		CB1F3DDB1DB046CB007F240B /* KSCrashAblyForkFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashAblyForkFramework.h; path = ../../Source/Framework/KSCrashAblyForkFramework.h; sourceTree = "<group>"; };
 		CB1F3DDD1DB04750007F240B /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ../../Source/Framework/module.modulemap; sourceTree = "<group>"; };
 		CB25A5C71DF221AD00EC2B02 /* KSCPU.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = KSCPU.c; path = ../../Source/KSCrash/Recording/Tools/KSCPU.c; sourceTree = "<group>"; };
 		CB25A5C81DF221AD00EC2B02 /* KSCPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCPU.h; path = ../../Source/KSCrash/Recording/Tools/KSCPU.h; sourceTree = "<group>"; };
@@ -408,7 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				CB1F3DDD1DB04750007F240B /* module.modulemap */,
-				CB1F3DDB1DB046CB007F240B /* KSCrashFramework.h */,
+				CB1F3DDB1DB046CB007F240B /* KSCrashAblyForkFramework.h */,
 				CB0DD4FA1D9B6DD9009D4FE7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -728,7 +728,7 @@
 				CBA8A0DA1E25D3CF0019B5B9 /* KSCrashCachedData.h in Headers */,
 				CB736FFC1D9B6F7800E3230F /* DemangleNodes.h in Headers */,
 				CB736FFB1D9B6F7800E3230F /* Demangle.h in Headers */,
-				CB1F3DDC1DB046CB007F240B /* KSCrashFramework.h in Headers */,
+				CB1F3DDC1DB046CB007F240B /* KSCrashAblyForkFramework.h in Headers */,
 				CB9BFDD31DD53FF300EA4F27 /* KSCrashMonitorContext.h in Headers */,
 				CB1806851E0DA02800239506 /* KSStackCursor_Backtrace.h in Headers */,
 				CB73702F1D9B6FB900E3230F /* NSData+GZip.h in Headers */,

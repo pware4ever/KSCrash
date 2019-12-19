@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03082CD51D9181F600935324 /* KSCrashMonitor_Zombie.c in Sources */ = {isa = PBXBuildFile; fileRef = 03082CD41D9181F600935324 /* KSCrashMonitor_Zombie.c */; };
-		03B07DB41D089690007B4758 /* KSCrashFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B07DB21D089690007B4758 /* KSCrashFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03B07DB41D089690007B4758 /* KSCrashAblyForkFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B07DB21D089690007B4758 /* KSCrashAblyForkFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB18069C1E0DA09B00239506 /* KSStackCursor_Backtrace.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1806961E0DA09B00239506 /* KSStackCursor_Backtrace.c */; };
 		CB18069D1E0DA09B00239506 /* KSStackCursor_Backtrace.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1806961E0DA09B00239506 /* KSStackCursor_Backtrace.c */; };
 		CB18069E1E0DA09B00239506 /* KSStackCursor_Backtrace.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1806971E0DA09B00239506 /* KSStackCursor_Backtrace.h */; };
@@ -409,7 +409,7 @@
 
 /* Begin PBXFileReference section */
 		03082CD41D9181F600935324 /* KSCrashMonitor_Zombie.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = KSCrashMonitor_Zombie.c; path = ../../Source/KSCrash/Recording/Monitors/KSCrashMonitor_Zombie.c; sourceTree = "<group>"; };
-		03B07DB21D089690007B4758 /* KSCrashFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashFramework.h; path = ../../Source/Framework/KSCrashFramework.h; sourceTree = "<group>"; };
+		03B07DB21D089690007B4758 /* KSCrashAblyForkFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashAblyForkFramework.h; path = ../../Source/Framework/KSCrashAblyForkFramework.h; sourceTree = "<group>"; };
 		03B07DB31D089690007B4758 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ../../Source/Framework/module.modulemap; sourceTree = "<group>"; };
 		CB1806961E0DA09B00239506 /* KSStackCursor_Backtrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = KSStackCursor_Backtrace.c; path = ../../Source/KSCrash/Recording/Tools/KSStackCursor_Backtrace.c; sourceTree = "<group>"; };
 		CB1806971E0DA09B00239506 /* KSStackCursor_Backtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSStackCursor_Backtrace.h; path = ../../Source/KSCrash/Recording/Tools/KSStackCursor_Backtrace.h; sourceTree = "<group>"; };
@@ -825,7 +825,7 @@
 		CB8E55F117EB99E3000C56D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				03B07DB21D089690007B4758 /* KSCrashFramework.h */,
+				03B07DB21D089690007B4758 /* KSCrashAblyForkFramework.h */,
 				03B07DB31D089690007B4758 /* module.modulemap */,
 				CB8E55F217EB99E3000C56D3 /* KSCrash-Info.plist */,
 				CB8E55F317EB99E3000C56D3 /* InfoPlist.strings */,
@@ -1282,7 +1282,7 @@
 				CB25A5C11DF2209000EC2B02 /* KSCPU.h in Headers */,
 				CBBD3AAE1CAD98A300DBB897 /* KSCrashInstallationConsole.h in Headers */,
 				CB8E568817EB9B43000C56D3 /* KSLogger.h in Headers */,
-				03B07DB41D089690007B4758 /* KSCrashFramework.h in Headers */,
+				03B07DB41D089690007B4758 /* KSCrashAblyForkFramework.h in Headers */,
 				CB8E563117EB9AFD000C56D3 /* KSCrashReport.h in Headers */,
 				CB8E569217EB9B43000C56D3 /* KSObjCApple.h in Headers */,
 				CB8E565A17EB9B35000C56D3 /* KSCrashMonitor_User.h in Headers */,
