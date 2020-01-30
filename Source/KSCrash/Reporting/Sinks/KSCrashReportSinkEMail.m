@@ -134,7 +134,7 @@
 
 - (void) presentModalVC:(UIViewController*) vc
 {
-	self.dummyVC = [[UIViewController alloc] initWithNibName:nil bundle:nil];
+	/*self.dummyVC = [[UIViewController alloc] initWithNibName:nil bundle:nil];
 	self.dummyVC.view = [[UIView alloc] init];
 
     UIWindow* window = [[[UIApplication sharedApplication] delegate] window];
@@ -150,12 +150,12 @@
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
         [self.dummyVC presentModalViewController:vc animated:YES];
 #pragma clang diagnostic pop
-    }
+    }*/
 }
 
 - (void) dismissModalVC
 {
-    if([self.dummyVC respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
+    /*if([self.dummyVC respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
     {
         [self.dummyVC dismissViewControllerAnimated:YES completion:^
          {
@@ -171,7 +171,7 @@
 #pragma clang diagnostic pop
         [self.dummyVC.view removeFromSuperview];
         self.dummyVC = nil;
-    }
+    }*/
 }
 
 @end
@@ -245,7 +245,7 @@
 - (void) filterReports:(NSArray*) reports
           onCompletion:(KSCrashReportFilterCompletion) onCompletion
 {
-    if(![MFMailComposeViewController canSendMail])
+    /*if(![MFMailComposeViewController canSendMail])
     {
         [[[UIAlertView alloc] initWithTitle:@"Email Error"
                                     message:@"This device is not configured to send email."
@@ -285,7 +285,7 @@
                                                process = nil;
                                            });
                         }];
-                   });
+                   });*/
 }
 
 @end
